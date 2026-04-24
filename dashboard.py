@@ -11,10 +11,10 @@ st.set_page_config(
 
 @st.cache_data
 def load_data():
-    main_data = pd.read_csv("dashboard/main_data.csv")
-    rfm_data = pd.read_csv("dashboard/rfm_data.csv")
-    state_analysis = pd.read_csv("dashboard/state_analysis.csv")
-    category_analysis = pd.read_csv("dashboard/category_analysis.csv")
+    main_data = pd.read_csv("main_data.csv")
+    rfm_data = pd.read_csv("rfm_data.csv")
+    state_analysis = pd.read_csv("state_analysis.csv")
+    category_analysis = pd.read_csv("category_analysis.csv")
 
     main_data["order_purchase_timestamp"] = pd.to_datetime(main_data["order_purchase_timestamp"])
 
